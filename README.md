@@ -11,4 +11,8 @@ The site:
 
 ## Screenshots
 
+![Static website](https://github.com/Ekaterina-V/Uppgift_1/blob/master/media/Screenshot%20(798).png)
 
+![Static website menu](https://github.com/Ekaterina-V/Uppgift_1/blob/master/media/Screenshot%20(799).png)
+
+![Static website mobile version](https://github.com/Ekaterina-V/Uppgift_1/blob/master/media/Screenshot%20(801).png)
