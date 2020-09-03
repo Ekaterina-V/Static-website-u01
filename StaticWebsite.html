@@ -2,6 +2,8 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Website of a Caffe for Children" />
+    <meta name="keywords" content="Barnkaffe,kallas,Solna,workshop"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="WebsiteStyle.css" />
@@ -9,29 +11,71 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="menu">
+      <div class="menu" role="menubar">
         <ul>
-          <li><a href="https://www.google.com/maps/place/Nina+I+Parken/@59.3591192,17.9935424,17z/data=!4m5!3m4!1s0x465f9deae1ffb45b:0x80ea7251b2d781a7!8m2!3d59.3578669!4d17.9942288">Location</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Workshops and events</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="https://www.google.com/maps/place/Nina+I+Parken/@59.3591192,17.9935424,17z/data=!4m5!3m4!1s0x465f9deae1ffb45b:0x80ea7251b2d781a7!8m2!3d59.3578669!4d17.9942288" tabindex="1">Location</a></li>
+          <li><a href="#" tabindex="1">Menu</a></li>
+          <li><a href="#" tabindex="1">Workshops & events</a></li>
+          <li><a href="#" tabindex="1">Contacts</a></li>
         </ul>
       </div>
-     
+
       <div class="header">
-        <p>Barncafe hos Fixarna</p>
+        <p tabindex="3" role="banner">Barncafe hos Fixarna</p>
       </div>
+
+      <div class="aside">
+        <div class="boxes">
+          <div class="search-box" role="search" >   
+            <form action="form">
+              <input type="search" class="search-form" name="search form" placeholder="Search" value="Sök" tabindex="2">
+              <button class="search-button" value="Sök" tabindex="2">
+                <img src="./media/searchicon.png" 
+                     alt="Icon av searchbuttom"
+                     title="Det kan hjälpa dig att söker efter via websidan" width="25" height="25"
+                >
+              </button>
+            </form>
+          </div>
+
+          <div class="boxes-for-links">
+            <div class="box">
+              <a href="#" tabindex="2">Barnkalas med Fixarna</a>
+            </div>
+            <div class="box">
+              <a href="#" tabindex="2">Workshops</a>
+            </div>
+            <div class="box">
+              <a href="https://bibliotek.solna.se/sv/event/modersm%C3%A5lsdagen-2019" tabindex="2">Barn modersmål events</a>
+            </div>
+            <div class="box">
+              <a href="#" tabindex="2">Samarbete med Kulturhuset</a>
+            </div>
+            <div class="box">
+              <a href="https://www.barnistan.se/museum?gclid=EAIaIQobChMIuIej-pn95AIVw-eaCh0e9g1sEAAYASAAEgIv__D_BwE" tabindex="2">Museum för barn i Stockholm</a>
+            </div>
+            <div class="box">
+              <a href="https://www.1000affarsideer.se/affaersideer-foer-unga/783-barnkalas-fixare.html" tabindex="2">Tips för barnkalas</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+
+
       <div class="content">
         <article>
           <header>
-            <h2>Välkomna hos Fixarna Barncafe!</h2>
-          </header>
+            <h2 tabindex="4">Välkomna hos Fixarna Barncafe!</h2>
           <div class="image1">
           <img  class="fll" src="./Media/Fixarna.jpg" 
+          aria-label="Image av Fixarna från cartoon"
           title="Image av Fixarna från cartoon"
           alt="Fixarna's picture"
-          height="310";
-          width="300;"/>
+          height="310" 
+          width="300" 
+          />
           </div>
             <p>Barncakeet håller öppet varje dag <strong> 9.30-12 </strong> och <strong>  14.30-16.30 </strong>. Fika och lunch utlovas varje gång. Vi håller till i församlingsgården i Solna.</p>
           </header>
@@ -39,16 +83,16 @@
         <hr>
         <article>
           <header>
-            <h2>Menu hos Barncafeet!</h2>
+            <h2 tabindex="4">Menu hos Barncafeet!</h2>
             <p>Vår lokal, i Solna, kan erbjuda småa gäster och färäldrar mat och dryck av högsta kvalitet. Under sommarhalvåret kan du följa skådespelet på Skytteholmsparklek från vår trevliga uteservering.</p>
             <div class="container">
               <embed 
-              src="media/barnmenu.pdf"
+              src ="media/barnmenu.pdf"
               title="Vår menu för barn"
               alt="Barnmenu i pdf"
               type="application/pdf"
-              width="100%"
-              height="400px"
+              width="500"
+              height="400"
               />
             </div>
 
@@ -57,103 +101,65 @@
         </article>
         <article>
           <header>
-            <h2>Kalas med Fixarna</h2>
+            <h2 tabindex="4">Kalas med Fixarna</h2>
             <p>
-              Ett kalas hos oss är mer än bara ett kalas. Välj ett underbart kalasrum dukat med <b> popcorn, Fixarnas saft</b> och <b> en härlig glassbomb!</b></br>
-              Födelsedagsbarnet får besöka lekrummet hemliga skattkammare och välja en egen present. När barnen har fikat och ätit är det sedan dags för fri lek så länge ni vill. Kalaset avslutas med att alla barn får Fixarna egen godispåse. </br>
-              Det har aldrig varit enklare att ge ditt barn ett oförglömligt kalas hos Fixarna Barncafeet. Boka kalaset direkt via vår enkla webbokning. </br>
+              Ett kalas hos oss är mer än bara ett kalas. Välj ett underbart kalasrum dukat med <b> popcorn, Fixarnas saft</b> och <b> en härlig glassbomb!</b><br> Födelsedagsbarnet får besöka lekrummet hemliga skattkammare och välja en egen present. När barnen har fikat och ätit är det sedan dags för fri lek så länge ni vill. Kalaset avslutas med att alla barn får Fixarna egen godispåse.<br>
+              Det har aldrig varit enklare att ge ditt barn ett oförglömligt kalas hos Fixarna Barncafeet.<br>Boka kalaset direkt via vår enkla webbokning.
             </p>
             
-            <div class="container">
-            <video
-              width="500"
-              height="380"
-              preload none
-              controls
-              source src="https://youtu.be/u5X8h8e3Ank" type="video/mp4"
-              titel="Video från barnkalas med Fixarna"
-              alt="Video Kalas med Fixarna"
-              poster="./Media/Fixarna_kalas.jpg"
-              >
-          </video>
+            <p>Video från barnkalas med Fixarna</p>
+            <div class="video">
+            <iframe 
+              width="567" 
+              height="318" 
+              src="https://www.youtube.com/embed/u5X8h8e3Ank" 
+              allow="accelerometer; encrypted-media; gyroscope;picture-in-picture" allowfullscreen
+            >
+            </iframe>
+          </div>
           
-          <p> Din webbläsare stödjer tyvärr inte video, prova <a href="https://youtu.be/u5X8h8e3Ank"> ladda ned videon </a> istället</p>
+          <p> Om webbläsare stödjer inte video, prova gärna <a href="https://youtu.be/u5X8h8e3Ank"> ladda ned videon </a> istället</p>
           </header>
           <hr>
         </article>
    
         <article>
-            <header> 
-                <h2> Våra kontakter</h2>
-               <header/>
-               <table>
-                   <tr>
-                       <td> Sidan hos facebook</td>
-                       <td><a href="https://www.facebook.com/fixiki/2">
-                           <img 
-                           src="./media/facebook.png"  
-                           alt="Fixarnas sida hos facebook"
-                           title="lets connect!"
-                           width="20"
-                           height="20"
-                       /></td>
-                   </tr>
-                   <tr>
-                       <td> Följ oss via instagram</td>
-                       <td><a href="https://www.instagram.com/fixiki_official/?hl=sv/">
-                           <img 
-                           src="./media/instagram.png"
-                           alt="Instagram sidan"
-                           title="lets connect!"
-                           width="20"
-                           height="20"
-                        /></td>
-                   </tr>
-               </table>
+          <header> 
+            <h2 tabindex="4">Våra kontakter</h2>
+          </header>
+              <table>
+                <tr>
+                  <td tabindex="5">Sidan hos facebook:</td>
+                  <td><a href="https://www.facebook.com/fixiki/2" class="icon-facebook" aria-label="Besök Facebook"></a>
+                    <img 
+                      src="./media/facebook.png"  
+                      alt="Fixarnas sida hos facebook"
+                      title="lets connect!"
+                      width="20"
+                      height="20"
+                      tabindex="5"
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td tabindex="5">Följ oss via instagram:</td>
+                  <td><a href="https://www.instagram.com/fixiki_official/?hl=sv/" class="icon-instagram" aria-label="Besök Instagram"></a>
+                    <img 
+                      src="./media/instagram.png"
+                      alt="Instagram sidan"
+                      title="lets connect!"
+                      width="20"
+                      height="20"
+                      tabindex="5"
+                    >
+                  </td>
+                </tr>
+              </table>
         </article>
       </div>
-
-      <div class="aside">
-        <div class="container-form">
-          <form 
-            action="form"
-            type="get">
-            <input type="text"
-            id="search-form"
-            name="search"
-            placeholder="Search">
-            <buttom>
-              <img src="./media/searchicon.png" 
-              alt="Icon av searchbuttom"
-              title="Det kan hjälpa dig att söker efter via websidan"
-              width="25"
-              height="25"
-              >
-            </buttom>
-          </form>
-        </div>
-
-        <ul>
-          <li><a href="#"> Barnkalas med Fixarna </a></li>
-          <li><a href="#"> Workshops </a></li>
-          <li><a href="#"> Barn modersmål events </a></li>
-          <li><a href="#"> Samarbete med Kulturhuset </a></li>
-          <li>
-            <a 
-            href="https://www.barnistan.se/museum?gclid=EAIaIQobChMIuIej-pn95AIVw-eaCh0e9g1sEAAYASAAEgIv__D_BwE"> Museum för barn i Stockholm </a>
-          </li>
-          <li> <a 
-            href="https://www.1000affarsideer.se/affaersideer-foer-unga/783-barnkalas-fixare.html">  Tips för barnkalas </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="clear"></div>
-      <div class="footer">
-        <section class="right"> 
-          <span> All rights reserved &copy  </section>
-      </div>
-       
+    <div class="clear"></div>
+      <div class="footer" role="contentinfo">
+          <p>All rights reserved &copy;</p>  
       </div>
     </div>
   </body>
